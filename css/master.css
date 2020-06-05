@@ -3,3 +3,29 @@
   padding:0;
   box-sizing: border-box;
 }
+
+.flex_mode{
+  display: flex;
+}
+
+
+.navbar_sinistra{
+  background-color: black;
+  width: 300px;
+  height: calc(100vh - 80px);
+}
+
+
+
+
+footer {
+  background-color: grey;
+  height: 80px;
+  width: 100%;
+}
+
+.contents {
+  width: calc(100vw - 300px);
+  height: calc(100vh - 80px);
+  background-color: darkblue;
+}
