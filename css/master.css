@@ -9,11 +9,11 @@
 }
 
 
-.navbar_sinistra{
+/* .navbar_sinistra{
   background-color: black;
   width: 300px;
   height: calc(100vh - 80px);
-}
+} */
 
 
 
@@ -24,8 +24,8 @@ footer {
   width: 100%;
 }
 
-.contents {
+/* .contents {
   width: calc(100vw - 300px);
   height: calc(100vh - 80px);
   background-color: darkblue;
-}
+} */
