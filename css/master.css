@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 .flex_mode{
@@ -9,11 +10,19 @@
 }
 
 
-/* .navbar_sinistra{
+.navbar_sinistra{
   background-color: black;
   width: 300px;
   height: calc(100vh - 80px);
-} */
+}
+
+#logo_spotify{
+  height: 40px;
+  width: auto;
+  
+}
+
+
 
 
 

@@ -129,7 +129,7 @@
 
 }
 
-@media all and (min-width:550px max-width: 768px) {
+@media all and (min-width: 550px) and (max-width: 768px) {
 
   /* colonne */
   .col-s-1 {
