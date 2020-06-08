@@ -19,9 +19,19 @@
 #logo_spotify{
   height: 40px;
   width: auto;
-  
+
 }
 
+.nav_list img{
+  height: 30px;
+  width: auto;
+
+}
+
+.playlist_nav{
+  overflow:auto;
+  height: 50px;
+}
 
 
 
