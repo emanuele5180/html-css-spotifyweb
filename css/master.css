@@ -41,6 +41,19 @@
   /* height: 50px; */
 }
 
+.nav_footer {
+  flex-direction: column;
+  justify-content:flex-end;
+
+
+}
+
+.nav_footer a{
+  display:block;
+
+
+}
+
 /* sezione contenuti */
 
 .contenuti_playlist {
