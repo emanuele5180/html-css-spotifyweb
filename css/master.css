@@ -5,6 +5,13 @@
   font-family: Roboto;
 }
 
+/* clearfix */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .flex_mode{
   display: flex;
 }
@@ -14,6 +21,7 @@
   background-color: black;
   width: 300px;
   height: calc(100vh - 80px);
+  float:left;
 }
 
 #logo_spotify{
@@ -30,10 +38,17 @@
 
 .playlist_nav{
   overflow:auto;
-  height: 50px;
+  /* height: 50px; */
 }
 
+/* sezione contenuti */
 
+.contenuti_playlist {
+  width: calc(100% - 300px);
+  height: calc(100vh - 80px);
+  background-color: darkblue;
+  float: left;
+}
 
 
 
