@@ -66,6 +66,7 @@
   height: calc(100vh - 80px);
   background-color: #141922;
   float: left;
+  overflow: auto;
 }
 
 .upgrade_bar {
@@ -74,14 +75,15 @@
   background-color: black;
   opacity:0.5;
   text-align: right;
+  line-height: 80px;
 
 }
 
 .upgrade_botton a{
-  color: white;
+  color: grey;
   line-height: 80px;
   padding: 12px;
-  border: white 1px solid;
+  border: grey 1px solid;
   border-radius: 20px;
   font-size: 13px;
   text-decoration: none;
@@ -89,14 +91,19 @@
 
 }
 
-.playlist_album {
-  overflow: ;
-
+.upgrade_botton a:hover{
+  padding: 14px;
+  color: white;
+  border: white 1px solid;
 }
+
 
 .blocksong h4{
   color: white;
+}
 
+.blocksong h5{
+  color: grey;
 }
 
 
