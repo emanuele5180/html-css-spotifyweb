@@ -16,11 +16,9 @@
     <main class="container">
 
       <!-- sezione sinistra -->
-      <section class="navbar_sinistra flex_mode">
+      <section class="navbar_sinistra">
 
         <!-- navbar sinistra fissa -->
-
-
         <nav class="">
           <a href="#"><img id="logo_spotify" src="img/logo.svg" alt="logo spotify"></a>
           <ul class="nav_list">
@@ -52,15 +50,12 @@
 
         <!-- upgradebar fissa, "trasparente" -->
         <section class="upgrade_bar">
-          <div class="upgrade_botton" >
-            <a href="#">EFFETTUA L'UPGRADE</a>
-          </div>
-
+          <a class="upgrade_button" href="#">EFFETTUA L'UPGRADE</a>
         </section>
 
         <!-- sezione principale contenuti viewport-->
         <section class=".contents">
-          <ul class="top_content_bar flex_mode">
+          <ul class="top_content_bar">
             <li><a href="#">IN EVIDENZA</a> </li>
             <li><a href="#">PODCAST</a> </li>
             <li><a href="#">CLASSIFICHE</a> </li>
@@ -68,9 +63,14 @@
             <li><a href="#">NUOVE USCITE</a> </li>
             <li><a href="#">IN EVIDENZA</a> </li>
           </ul>
-          <div class="playlist_album flex_mode">
 
-            <h3>Recently played</h3>
+          <!-- elenco contenuti album parte principale -->
+
+          <div class="playlist_album flex_mode">
+            <div class="title_content">
+              <h3>Recently played</h3>
+            </div>
+
             <div class="recently_played flex_mode">
               <div class="blocksong">
                 <img src="img/metal_lifting.jpg" alt="immagine album">
@@ -89,10 +89,11 @@
               </div>
             </div>
 
-            <h3>Creato per John Doe</h3>
-            <h4>Più ascolti più accurati saranno i suggerimenti</h4>
+            <div class="title_content">
+              <h3>Creato per John Doe</h3>
+              <h4>Più ascolti più accurati saranno i suggerimenti</h4>
+            </div>
             <div class="creato_per_john_doe flex_mode">
-
               <div class="blocksong">
                 <img src="img/metal_lifting.jpg" alt="immagine album">
                 <h4>Heavy Metal</h4>
@@ -105,8 +106,10 @@
               </div>
             </div>
 
-            <h3>Artisti più popolari</h3>
-            <h4>Più ascolti più accurati saranno i suggerimenti</h4>            
+            <div class="title_content">
+              <h3>Artisti più popolari</h3>
+              <h4>Più ascolti più accurati saranno i suggerimenti</h4>
+            </div>
             <div class="artisti_popolari flex_mode">
               <div class="blocksong">
                 <img src="img/metal_lifting.jpg" alt="immagine album">
@@ -134,6 +137,46 @@
 
     <footer>
       <!-- barra fissa bot -->
+      <div class="barra_sinistra">
+        <div class="blockbot">
+          <img src="img/metal_lifting.jpg" alt="immagine album">
+          <div class="titles_footer">
+            <h4>Heavy Metal</h4>
+            <h5>subtitle</h5>
+          </div>
+
+        </div>
+        <div class="">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+
+
+      <div class="barra_centrale">
+        <div class="">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="barra_destra">
+          <span></span>
+          <hr>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="barra_destra">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <hr>
+
+      </div>
+
+
     </footer>
 
   </body>

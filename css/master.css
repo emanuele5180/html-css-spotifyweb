@@ -12,8 +12,20 @@
   clear: both;
 }
 
-.flex_mode{
+/* .flex_mode{
   display: flex;
+} */
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+a:hover{
+  color: white;
+}
+
+li{
+  list-style-type: none;
 }
 
 
@@ -22,6 +34,9 @@
   width: 300px;
   height: calc(100vh - 80px);
   float:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 }
 
@@ -40,12 +55,12 @@
 
 .playlist_nav{
   overflow:auto;
-  /* height: 50px; */
+  height: 50px;
 }
 
 .nav_footer {
   width: 100%;
-  align-self: flex-end;
+
 }
 
 .nav_footer a{
@@ -56,7 +71,6 @@
 
 /* sezione contenuti */
 
-/* upgrade bar */
 
 
 .contenuti_playlist {
@@ -67,6 +81,8 @@
   overflow: auto;
 }
 
+/* upgrade bar */
+
 .upgrade_bar {
   width: 100%;
   height: 80px;
@@ -75,10 +91,13 @@
   text-align: right;
   line-height: 80px;
   position: fixed;
+  z-index: 989;
+  top: 0;
+  right: 0;
 
 }
 
-.upgrade_botton a{
+.upgrade_button {
   color: grey;
   line-height: 80px;
   padding: 12px;
@@ -86,22 +105,61 @@
   border-radius: 20px;
   font-size: 13px;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 30px;
+
 
 }
 
-.upgrade_botton a:hover{
+.upgrade_button:hover{
   padding: 14px;
   color: white;
   border: white 1px solid;
 }
 
-.playlist_album {
-  flex-direction: column;
+/* contenuti con immagini */
+
+.top_content_bar {
+  padding-top: 85px;
+  display: flex;
+  justify-content: center;
+}
+.top_content_bar li {
+  padding: 5px;
+  font-size: 10px;
+
+}
+.top_content_bar li a:hover {
+  border-bottom: 2px #ccff00 solid;
 
 }
 
+
+.playlist_album {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_content h4{
+  padding-left: 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.playlist_album h3{
+  padding: 10px;
+  color: white;
+}
+
+
+
+.playlist_album h5{
+  color: grey;
+  font-size: 10px;
+}
+
+
 .recently_played, .creato_per_john_doe, .artisti_popolari {
+  display: flex;
   flex-wrap:wrap;
 }
 .recently_played .blocksong,.creato_per_john_doe .blocksong,.artisti_popolari .blocksong {
@@ -109,9 +167,13 @@
 
 }
 
-
+.blocksong {
+  padding: 10px;
+  text-align: center;
+}
 .blocksong h4{
   color: white;
+  /* padding:5px; */
 }
 
 .blocksong h5{
@@ -123,10 +185,20 @@ footer {
   background-color: #282828;
   height: 80px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* .contents {
-  width: calc(100vw - 300px);
-  height: calc(100vh - 80px);
-  background-color: darkblue;
-} */
+.barra_sinistra{
+  display: flex;
+}
+.blockbot{
+  display: flex;
+}
+
+.blockbot img {
+  height: 40px;
+}
