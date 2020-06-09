@@ -22,8 +22,6 @@
   width: 300px;
   height: calc(100vh - 80px);
   float:left;
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
 
 }
 
@@ -76,6 +74,7 @@
   opacity:0.5;
   text-align: right;
   line-height: 80px;
+  position: fixed;
 
 }
 
@@ -95,6 +94,13 @@
   padding: 14px;
   color: white;
   border: white 1px solid;
+}
+
+.playlist_album {
+  flex-direction: column;
+}
+.recently_played .blocksong,.creato_per_john_doe .blocksong,.artisti_popolari .blocksong {
+  flex-direction: row;
 }
 
 
