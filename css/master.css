@@ -98,9 +98,15 @@
 
 .playlist_album {
   flex-direction: column;
+
+}
+
+.recently_played, .creato_per_john_doe, .artisti_popolari {
+  flex-wrap:wrap;
 }
 .recently_played .blocksong,.creato_per_john_doe .blocksong,.artisti_popolari .blocksong {
   flex-direction: row;
+
 }
 
 
