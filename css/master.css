@@ -37,6 +37,11 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 20px;
+
+}
+
+@media all and (max-width 50px){
 
 }
 
@@ -44,6 +49,7 @@ li{
 #logo_spotify{
   height: 40px;
   width: auto;
+  padding-left: 20px;
 
 }
 
@@ -52,6 +58,23 @@ li{
   width: auto;
 
 }
+
+.nav_list li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 10px 20px;
+
+}
+
+#playlist_title {
+  color:white;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
 
 .playlist_nav{
   overflow:auto;
@@ -84,7 +107,7 @@ li{
 /* upgrade bar */
 
 .upgrade_bar {
-  width: 100%;
+  width: 82%;
   height: 80px;
   background-color: black;
   opacity:0.5;
@@ -126,12 +149,27 @@ li{
 .top_content_bar li {
   padding: 5px;
   font-size: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 
 }
 .top_content_bar li a:hover {
   border-bottom: 2px #ccff00 solid;
 
 }
+
+/* .top_content_bar span {
+  display: none;
+  width: 20px;
+  height: 2px;
+  background-color: #ccff00;
+} */
+
+/* .top_content_bar li:hover span {
+  display: block;
+} */
+
 
 
 .playlist_album {
@@ -170,6 +208,7 @@ li{
 .blocksong {
   padding: 10px;
   text-align: center;
+  position: relative;
 }
 .blocksong h4{
   color: white;
@@ -180,6 +219,28 @@ li{
   color: grey;
 }
 
+.blocksong img{
+  height: 180px;
+  width: auto;
+}
+
+.blocksong img:hover {
+  opacity: 0.5;
+}
+
+.blocksong i {
+  font-size: 50px;
+  position: absolute;
+  top: 32%;
+  left:38%;
+  color: white;
+  display: none;
+}
+
+
+.blocksong:hover i{
+  display: block;
+}
 
 footer {
   background-color: #282828;
@@ -190,6 +251,7 @@ footer {
   left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .barra_sinistra{
@@ -201,4 +263,20 @@ footer {
 
 .blockbot img {
   height: 40px;
+}
+
+
+.player_console {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.player_console a {
+  padding: 0 20px;
+}
+
+
+.line_time {
+  border: 1px solid grey;
+  width: 100%;
 }

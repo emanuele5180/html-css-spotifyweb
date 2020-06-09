@@ -19,14 +19,16 @@
       <section class="navbar_sinistra">
 
         <!-- navbar sinistra fissa -->
-        <nav class="">
+        <nav class="fixed_bar">
           <a href="#"><img id="logo_spotify" src="img/logo.svg" alt="logo spotify"></a>
+
           <ul class="nav_list">
-            <li><a href="#"><img src="img/home.svg" alt="home icon">Home</a></li>
-            <li><a href="#"><img src="img/search.svg" alt="search">Search</a></li>
-            <li><a href="#"><img src="img/libreria.svg" alt="libreria">La tua Libreria</a></li>
+            <li><img src="img/home.svg" alt="home icon"> <a href="#">Home</a></li>
+            <li><img src="img/search.svg" alt="search"><a href="#">Search</a></li>
+            <li><img src="img/libreria.svg" alt="libreria"><a href="#">La tua Libreria</a></li>
           </ul>
-          <h4>Playlist</h4>
+
+          <h4 id="playlist_title">Playlist</h4>
           <a href="#"><i class="fas fa-plus-square"></i>crea playlist</a>
           <ul class="playlist_nav">
             <li><a href="#">Playlist</a> </li>
@@ -56,12 +58,30 @@
         <!-- sezione principale contenuti viewport-->
         <section class=".contents">
           <ul class="top_content_bar">
-            <li><a href="#">IN EVIDENZA</a> </li>
-            <li><a href="#">PODCAST</a> </li>
-            <li><a href="#">CLASSIFICHE</a> </li>
-            <li><a href="#">GENERI E MOOD</a> </li>
-            <li><a href="#">NUOVE USCITE</a> </li>
-            <li><a href="#">IN EVIDENZA</a> </li>
+            <li>
+              <a href="#">IN EVIDENZA</a>
+              <span></span>
+           </li>
+            <li>
+              <a href="#">PODCAST</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">CLASSIFICHE</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">GENERI E MOOD</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">NUOVE USCITE</a>
+              <span></span>
+            </li>
+            <li>
+              <a href="#">IN EVIDENZA</a>
+              <span></span>
+            </li>
           </ul>
 
           <!-- elenco contenuti album parte principale -->
@@ -73,16 +93,37 @@
 
             <div class="recently_played flex_mode">
               <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
                 <img src="img/metal_lifting.jpg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
               </div>
               <div class="blocksong">
-                <img src="img/metal_lifting.jpg" alt="immagine album">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/stranger.jpeg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
               </div>
               <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/split.jpeg" alt="immagine album">
+                <h4>Heavy Metal</h4>
+                <h5>subtitle</h5>
+              </div>
+              <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/cure.jpeg" alt="immagine album">
+                <h4>Heavy Metal</h4>
+                <h5>subtitle</h5>
+              </div>
+              <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/sinister.jpeg" alt="immagine album">
+                <h4>Heavy Metal</h4>
+                <h5>subtitle</h5>
+              </div>
+              <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
                 <img src="img/metal_lifting.jpg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
@@ -95,11 +136,13 @@
             </div>
             <div class="creato_per_john_doe flex_mode">
               <div class="blocksong">
-                <img src="img/metal_lifting.jpg" alt="immagine album">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/einaudi.jpeg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
               </div>
               <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
                 <img src="img/metal_lifting.jpg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
@@ -112,11 +155,13 @@
             </div>
             <div class="artisti_popolari flex_mode">
               <div class="blocksong">
-                <img src="img/metal_lifting.jpg" alt="immagine album">
+                <i class="far fa-play-circle circle_img"></i>
+                <img src="img/radar.jpeg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
               </div>
               <div class="blocksong">
+                <i class="far fa-play-circle circle_img"></i>
                 <img src="img/metal_lifting.jpg" alt="immagine album">
                 <h4>Heavy Metal</h4>
                 <h5>subtitle</h5>
@@ -154,16 +199,19 @@
 
 
       <div class="barra_centrale">
-        <div class="">
-          <i class="fas fa-random"></i>
-          <i class="fas fa-step-backward"></i>
-          <i class="far fa-play-circle"></i>
-          <i class="fas fa-step-forward"></i>
-          <i class="fas fa-redo"></i>
+        <div class="player_console">
+          <a href="#"><i class="fas fa-random"></i></a>
+          <a href="#"><i class="fas fa-step-backward"></i></a>
+          <a href="#"><i class="far fa-play-circle"></i></a>
+          <a href="#"><i class="fas fa-step-forward"></i></a>
+          <a href="#"><i class="fas fa-redo"></i></a>
         </div>
-        <div class="barra_destra">
+
+        <div class="time">
           <span></span>
-          <hr>
+          <div class="line_time">
+
+          </div>
           <span></span>
         </div>
       </div>
