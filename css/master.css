@@ -318,6 +318,12 @@ footer {
 .blockbot .titles_footer {
   padding-left: 15px;
 }
+.blockbot .titles_footer h4 {
+  color: white;
+}
+.blockbot .titles_footer h5 {
+  color:grey;
+}
 .barra_sinistra .bot_icon i {
   padding-left: 15px;
   flex-wrap: wrap;
