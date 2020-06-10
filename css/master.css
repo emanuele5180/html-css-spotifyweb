@@ -320,6 +320,7 @@ footer {
 }
 .barra_sinistra .bot_icon i {
   padding-left: 15px;
+  flex-wrap: wrap;
 }
 
 .player_console {
@@ -364,9 +365,9 @@ footer {
   background-color: white;
 }
 
-.barra_destra {
+/* .barra_destra {
   display: flex;
-}
+} */
 
 .barra_destra i {
   padding-right: 15px;
