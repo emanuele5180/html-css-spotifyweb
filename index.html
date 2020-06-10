@@ -21,7 +21,7 @@
         <!-- navbar sinistra fissa -->
         <nav class="fixed_bar">
           <a href="#"><img id="logo_spotify" src="img/logo.svg" alt="logo spotify"></a>
-
+          <a id="logo-small" href="#"><img src="img/logo-small.svg" alt=""> </a>
           <ul class="nav_list">
             <li><img src="img/home.svg" alt="home icon"> <a href="#">Home</a></li>
             <li><img src="img/search.svg" alt="search"><a href="#">Search</a></li>
@@ -29,7 +29,7 @@
           </ul>
 
           <h4 id="playlist_title">Playlist</h4>
-          <a href="#"><i class="fas fa-plus-square"></i>crea playlist</a>
+          <a id="piu_playlist" href="#"><i  class="fas fa-plus-square"></i>crea playlist</a>
           <ul class="playlist_nav">
             <li><a href="#">Playlist</a> </li>
             <li><a href="#">Playlist</a> </li>
@@ -41,8 +41,8 @@
           </ul>
         </nav>
         <div class="nav_footer">
-          <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
-          <a href="#"><i class="far fa-user-circle"></i>John Doe</a>
+          <a href="#"><i class="far fa-arrow-alt-circle-down"></i> <span>Installa app</span></a>
+          <a href="#"><i class="far fa-user-circle"></i> <span>John Doe</span></a>
         </div>
       </section>
 
@@ -191,7 +191,7 @@
           </div>
 
         </div>
-        <div class="">
+        <div class="bot_icon">
           <i class="far fa-heart"></i>
           <i class="far fa-folder"></i>
         </div>
@@ -208,19 +208,25 @@
         </div>
 
         <div class="time">
-          <span></span>
           <div class="line_time">
-
+            <div class="circle">
+            </div>
           </div>
-          <span></span>
         </div>
+
       </div>
 
       <div class="barra_destra">
         <i class="fas fa-bars"></i>
         <i class="fas fa-desktop"></i>
         <i class="fas fa-volume-up"></i>
-        <hr>
+        <div class="volume">
+          <div class="line_volume">
+
+          </div>
+
+        </div>
+
 
       </div>
 

@@ -41,7 +41,30 @@ li{
 
 }
 
-@media all and (max-width 50px){
+@media all and (max-width: 500px){
+  .navbar_sinistra{
+    width: 50px;
+  }
+  #logo_spotify{
+    display: none;
+  }
+  #logo-small {
+    display: block;
+
+
+  }
+
+  #playlist_title, #piu_playlist, .playlist_nav {
+    display: none;
+  }
+
+  .nav_list a {
+    display: none;
+  }
+  .nav_footer span{
+    display: none;
+  }
+
 
 }
 
@@ -51,6 +74,14 @@ li{
   width: auto;
   padding-left: 20px;
 
+
+}
+#logo-small {
+  display: none;
+  height: 40px;
+  width: auto;
+  padding-left: 20px;
+  color:white;
 }
 
 .nav_list img{
@@ -78,7 +109,12 @@ li{
 
 .playlist_nav{
   overflow:auto;
-  height: 50px;
+  height: 150px;
+  padding-left: 20px;
+}
+
+.playlist_nav li{
+  padding-top: 10px;
 }
 
 .nav_footer {
@@ -89,7 +125,19 @@ li{
 .nav_footer a{
   display:block;
 
+}
+.nav_footer a i {
+  font-size: 25px;
+  padding: 5px 10px 5px 20px;
+}
 
+.piu_playlist {
+  padding-left: 20px;
+}
+.fa-plus-square {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 40px;
 }
 
 /* sezione contenuti */
@@ -107,7 +155,7 @@ li{
 /* upgrade bar */
 
 .upgrade_bar {
-  width: 82%;
+  width: calc(100% - 300px);
   height: 80px;
   background-color: black;
   opacity:0.5;
@@ -145,6 +193,7 @@ li{
   padding-top: 85px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .top_content_bar li {
   padding: 5px;
@@ -263,8 +312,15 @@ footer {
 
 .blockbot img {
   height: 40px;
+  padding-left: 15px;
 }
 
+.blockbot .titles_footer {
+  padding-left: 15px;
+}
+.barra_sinistra .bot_icon i {
+  padding-left: 15px;
+}
 
 .player_console {
   padding: 10px;
@@ -275,8 +331,59 @@ footer {
   padding: 0 20px;
 }
 
-
-.line_time {
-  border: 1px solid grey;
+.time {
   width: 100%;
+  height: 6px;
+  background-color: #555;
+  border-radius: 6px;
+
+}
+.line_time {
+  position: relative;
+  border-radius: 6px;
+  width: 20%;
+  height: 6px;
+  background-color: #999;
+
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -3.5px;
+  left: 96%;
+  display: none;
+}
+.time:hover .circle {
+  display: block;
+}
+.time:hover .line_time {
+  background-color: white;
+}
+
+.barra_destra {
+  display: flex;
+}
+
+.barra_destra i {
+  padding-right: 15px;
+}
+
+.volume {
+  width: 100%;
+  height: 6px;
+  background-color: #555;
+  border-radius: 6px;
+
+}
+
+.line_volume {
+  width: 20%;
+  height: 6px;
+  background-color: #999;
+  border-radius: 6px;
+
 }
