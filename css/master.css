@@ -50,9 +50,7 @@ li{
   }
   #logo-small {
     display: block;
-
-
-  }
+  } 
 
   #playlist_title, #piu_playlist, .playlist_nav {
     display: none;
@@ -63,6 +61,14 @@ li{
   }
   .nav_footer span{
     display: none;
+  }
+
+  .contenuti_playlist {
+    width: calc(100% - 50px);
+  }
+
+  .upgrade_bar {
+    width: calc(100% - 50px);
   }
 
 
@@ -258,7 +264,7 @@ li{
   padding: 10px;
   text-align: center;
   position: relative;
-  
+
 }
 .blocksong h4{
   color: white;
